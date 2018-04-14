@@ -13,7 +13,12 @@ Make radial buttons. and answers
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dragonball Z Trivia</title>
+   <script
+   src="https://code.jquery.com/jquery-3.3.1.min.js"
+   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+   crossorigin="anonymous"></script>
+   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+   <title>Dragonball Z Trivia</title>
 </head>
 <body>
 
@@ -28,20 +33,23 @@ Make radial buttons. and answers
 
         </div>
 
-        <div class="timer">
-            <h2>Time Remaining:</h2>
-            
-                <!--New div has a timer counting down.!-->
-        </div>
+       
 
           <!--Make radial buttons. and answers DragonBall Z questions and answers.
             
             I created individual divs, but I could also include everything in one div.  
             If I encounter issues, I may collapse the questions to one div!-->  
 
-        <div class="questions">
-            
+        <div class="quiz">
+
+            <div class="timer">
+                <h2>Time Remaining:</h2>
+                
+                    <!--New div has a timer counting down.!-->
+            </div>
+
             <div class="question1">
+
                 <form action="">
                     <h2>What name does Vegeta call Goku throughout the series?</h2>
                     <input type="radio" name="question1" value="Kakarot">Kakarot
@@ -90,18 +98,31 @@ Make radial buttons. and answers
                         <input type="radio" name="question5" value="Toriyama">Toriyama
 
                     </form>
+            </div>    
+            
+          
+        </div>
+
+              <!--I'm going to hide this div using CSS and display it after the submit button is clicked-->
+              <div class="results" id="results">
+                <p>Check Your Knowledge</p>
+                <p id="correct">Correct Answers</p>
+                <p id="incorrect">Incorrect Answers</p>
+                <img src="./assets/images/Super Saiyan Goku.jpg" alt="Goku">
+
             </div>
 
-        </div>
-            
-        <div class="submitButton">
-            KAMEHAMEHA!!!!
-            <!--Need logic to capture the answers and confirm whether they are right or wrong !-->
+            <br>
+            <br>
 
-        </div> 
-    
+            <div class="submitButton">
+                <input type="button" name=submit value="KAMEHAMEHA!!!!" onclick = "check();">
+                <!--Need logic to capture the answers and confirm whether they are right or wrong !-->
+            </div> 
+
+            
     </div>
-  
+  <script src= "./assets/javascript/app.js"></script>
 </body>
 </html>
 
