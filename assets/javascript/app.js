@@ -12,7 +12,7 @@ function check(){
     console.log("linked");
     $(".results").show();
     $(".quiz").hide(1500);
-    $(".results").css("visibility","visible");
+    //$(".results").css("visibility","visible");
 
 }
 //begin to collect the answers and code it.  

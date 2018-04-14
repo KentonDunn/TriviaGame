@@ -1,5 +1,12 @@
 #results {
     background-color: rgb(90, 126, 168);
     display: none;
-    
+        
+}
+
+body {
+    background-image: url(../images/saiyans1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
 }
