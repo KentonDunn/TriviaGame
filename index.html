@@ -42,8 +42,10 @@ Make radial buttons. and answers
 
         <div class="quiz">
 
-            <div class="timer">
-                <h2>Time Remaining:</h2>
+            <div class="timer" >
+                <h2>Time Remaining: </h2>
+                <div id="countDown"></div>
+                
                 
                     <!--New div has a timer counting down.!-->
             </div>
@@ -105,10 +107,13 @@ Make radial buttons. and answers
 
               <!--I'm going to hide this div using CSS and display it after the submit button is clicked-->
               <div class="results" id="results">
-                <h1>Check Your Knowledge</h1>
-                <p id="correct">Correct Answers: <span id="totalCorrect"></span></p>
-                <p id="incorrect">Incorrect Answers: <span id="totalIncorrect"></span></p>
+                <div class="knowledge">
+                    <h1>Check Your Knowledge</h1>
+                    <p id="correct">Correct Answers: <span id="totalCorrect"></span></p>
+                    <p id="incorrect">Incorrect Answers: <span id="totalIncorrect"></span></p>
+                
                 <img src="./assets/images/Super Saiyan Goku.jpg" alt="Goku">
+            </div>   
 
             </div>
 

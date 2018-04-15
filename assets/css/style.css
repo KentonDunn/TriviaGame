@@ -1,6 +1,7 @@
 #results {
     background-color: rgb(90, 126, 168);
     display: none;
+    float: clear;
     
         
 }
@@ -16,3 +17,16 @@ p {
     font-size: 30px;
 
 }
+
+#countDown {
+    position: absolute;
+    float: right;
+    margin-left: 65%;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    box-sizing: border-box;
+    font-size: 200px;   
+    
+}
+

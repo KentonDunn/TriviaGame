@@ -15,12 +15,18 @@ var correctAnswer5 =  $("#answer5").val();
 var answerKey = [correctAnswer1,correctAnswer2,correctAnswer3,correctAnswer4,correctAnswer5]
 var totalCorrect = 0;
 var totalIncorrect = 0;
+var timer = 45;
+var intervalId;
+
+$(".submitbutton").on("click", stop);
 
 function check()
 {
     console.log("linked");
+    stop();
     $(".results").show();
     $(".quiz").hide(1500);
+    $(".submitbutton").hide(1000);
     $("#totalCorrect").text(totalCorrect);
     $("#totalIncorrect").text(totalIncorrect);
     //$(".results").css("visibility","visible");
@@ -115,11 +121,7 @@ function check()
 
 
         for (i = 0; i < answerKey.length; i++){
-
-        
-        
-        
-        
+    
         /*Failed if else that I can't get to work.  Going to try indexOf method.
         
         if (checkedAnswer1 = answerKey[i]){
@@ -139,15 +141,33 @@ function check()
             console.log("Answer to Question 5 is" + correctAnswer5);
         }*/
 
-
-
-
-
     }
 
-
-
+    
 }
+
+    function countDown() {
+        clearInterval(intervalId);
+        intervalID = setInterval(decrement, 1000);
+    }
+
+    function decrement(){
+        timer--;
+        $("#countDown").html("<h2>" + timer + "</h2>");
+        
+        if (timer === 0){
+            stop();
+            check();
+        }
+    }
+
+    function stop() {
+        timer = 0;
+    //clearInterval(intervalId);
+    }
+
+countDown();
+
 //begin to collect the answers and code it.  
 
 //google "How to capture the value of radio buttons in a quiz"
