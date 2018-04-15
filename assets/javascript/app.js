@@ -36,27 +36,23 @@ function check()
       var checkedAnswer5 = $("#answer5").prop("checked");
 
       console.log(checkedAnswer1);
+      
       //console.log(answerKey[i]);
 
 
-      /*Putting this away in case I find a way not to repeat myself
-      if (checkedAnswer1){
+      
+      if (checkedAnswer1)    {
         console.log("answer #1 was checked");
         totalCorrect++;
         console.log("Total correct answers:" + totalCorrect);
         $("#totalCorrect").text(totalCorrect);
-      }
+    }
       else {
         console.log("answer #1 was not checked");
         totalIncorrect++;
         console.log("Total incorrect answers: " + totalIncorrect);
         $("#totalIncorrect").text(totalIncorrect);
-    }
-          
-      //this code confirms if an answer was checked
-      var checkedAnswer2 = $("#answer2").prop("checked");
-      console.log(checkedAnswer2);
-      //console.log(answerKey[i]);
+        }
 
       if (checkedAnswer2){
         console.log("answer #2 was checked");
@@ -69,19 +65,56 @@ function check()
         totalIncorrect++;
         console.log("Total incorrect answers: " + totalIncorrect);
         $("#totalIncorrect").text(totalIncorrect);
-    }*/
+    }
 
-    
+    if (checkedAnswer3){
+        console.log("answer #3 was checked");
+        totalCorrect++;
+        console.log("Total correct answers:" + totalCorrect);
+        $("#totalCorrect").text(totalCorrect);
+      }
+      else {
+        console.log("answer #3 was not checked");
+        totalIncorrect++;
+        console.log("Total incorrect answers: " + totalIncorrect);
+        $("#totalIncorrect").text(totalIncorrect);
+    }
+
+    if (checkedAnswer4){
+        console.log("answer #4 was checked");
+        totalCorrect++;
+        console.log("Total correct answers:" + totalCorrect);
+        $("#totalCorrect").text(totalCorrect);
+      }
+      else {
+        console.log("answer #4 was not checked");
+        totalIncorrect++;
+        console.log("Total incorrect answers: " + totalIncorrect);
+        $("#totalIncorrect").text(totalIncorrect);
+    }
+
+    if (checkedAnswer5){
+        console.log("answer #5 was checked");
+        totalCorrect++;
+        console.log("Total correct answers:" + totalCorrect);
+        $("#totalCorrect").text(totalCorrect);
+      }
+      else {
+        console.log("answer #5 was not checked");
+        totalIncorrect++;
+        console.log("Total incorrect answers: " + totalIncorrect);
+        $("#totalIncorrect").text(totalIncorrect);
+    }
        //I want to compare what is submitted to the values in my array.  
       
       //console.log(answerKey.includes(checkedAnswer1));
         
     
 //code to check the answerKey for correct/incorrect answers
-var i;
+    var i;
 
 
-    for (i = 0; i < answerKey.length; i++){
+        for (i = 0; i < answerKey.length; i++){
 
         
         

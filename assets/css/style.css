@@ -11,3 +11,8 @@ body {
     background-size: cover;
     color: white;
 }
+
+p {
+    font-size: 30px;
+
+}
